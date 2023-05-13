@@ -121,7 +121,7 @@ body.open .navbar-overlay{
     width: 64px;
     height: 64px;
     padding: 0;
-    background-image: url(pictures/icons/menu.svg);
+    background-image: url(../pictures/icons/menu.svg);
     background-repeat: no-repeat;
     background-position: center;
 }

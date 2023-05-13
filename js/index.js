@@ -30,3 +30,5 @@ function navHighlighter() {
     }
   });
 }
+
+// WAYPOINT
