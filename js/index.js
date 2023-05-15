@@ -4,20 +4,36 @@ const toggleMenu = () => {
     document.body.classList.toggle("open");
 };
 
+// SCROLL HIDDEN
+
+const navbar = document.querySelector(".navbar");
+
+let lastScrollY = window.scrollY;
+
+window.addEventListener("scroll", () => {
+  if (lastScrollY < window.scrollY){
+    $('nav').addClass('nav-hidden');
+  } else{
+    $('nav').removeClass('nav-hidden');
+  }
+
+  lastScrollY = window.scrollY;
+});
+
 // WAYPOINT
 
-$(document).ready(function() {
-  $('.js--features').waypoint(function(direction) {
-    console.log('waypoint called'); // add this to check if waypoint is being called
-    if (direction == 'down') {
-      $('nav').addClass('sticky');
-    } else {
-      $('nav').removeClass('sticky');
-    }
-  }, {
-    offset: '160px'
-  });
-});
+// $(document).ready(function() {
+//   $('.js--features').waypoint(function(direction) {
+//     console.log('waypoint called'); // add this to check if waypoint is being called
+//     if (direction == 'down') {
+//       $('nav').addClass('sticky');
+//     } else {
+//       $('nav').removeClass('sticky');
+//     }
+//   }, {
+//     offset: '160px'
+//   });
+// });
 
 // SCROLL ACTIVE
 
@@ -73,4 +89,4 @@ function navHighlighter() {
   });
 }
 
-$('body').scrollspy({ target: '.navbar-menu' })
+$('body').scrollspy({ target: '.navbar-menu' });
