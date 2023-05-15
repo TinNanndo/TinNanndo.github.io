@@ -36,16 +36,6 @@ a.active{
     text-decoration: none;
 }
 
-#about{
-    background-color: red;
-    height: 100vh;
-}
-
-#portfolio{
-    background-color: purple;
-    height: 100vh;
-}
-
 #projects{
     background-color: blue;
     height: 100vh;
@@ -132,4 +122,64 @@ body.open .navbar-overlay{
     background-image: url(../pictures/icons/menu.svg);
     background-repeat: no-repeat;
     background-position: center;
+}
+
+/* ABOUT */
+
+#about{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.about{
+    background-color: #191919;
+    color: #f0f0f0;
+    border-radius: 10px;
+    padding: 10px;
+    height: 50%;
+    flex-basis: 50%;
+    margin: 20px;
+}
+
+.druga{
+    background-color: #e24040;
+    color: #f0f0f0;
+    border-radius: 10px;
+    padding: 10px;
+    height: 50%;
+    flex-basis: 50%;
+    margin: 20px;
+}
+
+/* PORTFOLIO */
+
+#portfolio{
+    height: 100%;
+    height: 100vh;
+}
+
+.lucky-cat{
+    display: flex;
+}
+
+.lucky-naslov{
+    flex-basis: 50%;
+}
+
+.lucky-text{
+    flex-basis: 50%;
+}
+
+.lucky-button a{
+    border-radius: 10px;
+    color: #f0f0f0;
+    text-decoration: none;
+    background-color: rgb(94, 94, 181);
+    padding: 10px;
+}
+
+.lucky-button a:hover{
+    background-color: rgb(254, 181, 79);
+    transition: 0.3s;
 }
