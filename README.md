@@ -19,7 +19,7 @@ This is my personal website portfolio showcasing my work as a web developer. It 
 
 ## About my projects
 
-### Project 1: [Lucky cat](project-link)
+### Project 1: [Lucky cat](https://tinnanndo.github.io/html/prva_stranica/index.html)
 
 - Description of project and its features
 - Technologies used
