@@ -19,6 +19,9 @@ This is my personal website portfolio showcasing my work as a web developer. It 
 
 ## About my projects
 
+### Home page of portfolio
+[Click me!!!](https://tinnanndo.github.io/)
+
 ### Project 1: [Lucky cat](https://tinnanndo.github.io/html/prva_stranica/index.html)
 
 - Description of project and its features
