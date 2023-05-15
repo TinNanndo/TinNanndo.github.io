@@ -25,18 +25,24 @@ This is my personal website portfolio showcasing my work as a web developer. It 
 - Technologies used
 - Screenshots or demo video
 
-### Project 2: [Project Name](project-link)
+### Project 2: [](project-link)
 
 - Description of project and its features
 - Technologies used
 - Screenshots or demo video
 
-### Project 3: [Project Name](project-link)
+### Project 3: [](project-link)
 
 - Description of project and its features
 - Technologies used
 - Screenshots or demo video
 
+### Project 4: [](project-link)
+
+- Description of project and its features
+- Technologies used
+- Screenshots or demo video
+- 
 ## Contact Me
 
 If you have any questions or would like to discuss a potential project, please feel free to contact me at tin.jovanovic003@gmail.com. Thank you for visiting my website portfolio!
