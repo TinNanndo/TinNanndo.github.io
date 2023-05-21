@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap');
+@import url(../font/Nohemi/nohemi-sve.css);
 
 *{
     box-sizing: border-box;
@@ -29,7 +30,6 @@ a.active{
 }
 
 #header{
-    background-color: aqua;
     height: 100vh;
 }
 
@@ -57,6 +57,7 @@ a.active{
     background-color: #1E1E1E;
     transition: top ease-in 0.3s;
     box-shadow: 0px 11px 15px rgba(30, 30, 30, 0.6);
+    font-family: "NohemiSemBd";
 }
 
 .navbar.nav-hidden{
@@ -132,6 +133,34 @@ body.open .navbar-overlay{
     background-image: url(../pictures/icons/menu.svg);
     background-repeat: no-repeat;
     background-position: center;
+}
+
+/* HEADER */
+
+.header-naslov{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.header-h1 h1{
+    position: absolute;
+    top: 339px;
+    left: 188px;
+    font-family: 'NohemiBlack';
+    font-size: 200px;
+    line-height: 201px;
+    color: #1E1E1E;
+}
+
+.header-p{
+    position: absolute;
+    top: 500px;
+    left: 223px;
+    font-family: 'NohemiLight';
+    font-size: 80px;
+    line-height: 80px;
+    color: #1E1E1E;
 }
 
 /* ABOUT */
