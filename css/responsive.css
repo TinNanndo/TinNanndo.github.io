@@ -1,10 +1,27 @@
-@media only screen and (min-width: 600px){
+/* PHONE + */
+
+@media only screen and (min-width: 640px){
+
+    
+}
+
+/* TABLET + */
+
+@media only screen and (min-width: 768px){
+
+}
+
+/* LAPTOP + */
+
+@media only screen and (min-width: 1024px){
+    /* NAVBAR */
+
     .navbar{
         justify-content: space-between;
         padding: 0 0 0 16px;
     }
-
-    .navbar-menu{
+    
+    .navbar-menu{   
         position: static;
         translate: 0 0;
         width: auto;
@@ -12,18 +29,24 @@
         flex-direction: row;
         visibility: visible;
     }
-
+    
     .navbar-menu > button{
         color: rgba(0, 0, 0, 0.5);
     }
-
+    
     .navbar-overlay{
         display: none;
     }
-
+    
     .navbar-burger{
         display: none;
     }
 
-    
+}
+
+/* DESTOP + */
+
+@media only screen and (min-width: 1280px){
+
+
 }
