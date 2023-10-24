@@ -144,12 +144,8 @@ body.open .navbar-overlay{
 }
 
 .header-h1 h1{
-    position: absolute;
-    top: 339px;
-    left: 188px;
     font-family: 'NohemiBlack';
-    font-size: 13.333vw;
-    line-height: 201px;
+    font-size: 440%;
     color: #1E1E1E;
 }
 

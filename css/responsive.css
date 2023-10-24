@@ -11,6 +11,12 @@
 
 }
 
+@media only screen and (min-width: 992px){
+    .header-h1 h1 {
+        font-size: 800%;
+    }
+}
+
 /* LAPTOP + */
 
 @media only screen and (min-width: 1024px){
@@ -42,7 +48,24 @@
         display: none;
     }
 
+
+    /* HEADER */
+
+    
 }
+
+@media only screen and (min-width: 1165px){
+    /* HEADER */
+
+    .header-h1 h1 {
+        position: absolute;
+        top: 339px;
+        left: 188px;
+        font-size: 13.333vw;
+        line-height: 201px;
+    }
+}
+
 
 /* DESTOP + */
 
