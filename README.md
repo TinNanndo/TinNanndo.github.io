@@ -24,17 +24,15 @@ This is my personal website portfolio showcasing my work as a web developer. It 
 
 ### Project 1: [Lucky cat](https://tinnanndo.github.io/html/prva_stranica/index.html)
 
-- Description of project and its features
-- Technologies used
-- Screenshots or demo video
+- Final project for my high school of web design 
+- HTML, jQuery, CSS
 
-### Project 2: [](project-link)
+### Project 2: [Firmus](https://tinnanndo.github.io/html/druga_stranica/index.html)
 
-- Description of project and its features
-- Technologies used
-- Screenshots or demo video
+- Project for Firmus app for students about job searching
+- HTML, CSS, JavaScript
 
-### Project 3: [](project-link)
+<!-- ### Project 3: [](project-link)
 
 - Description of project and its features
 - Technologies used
@@ -44,7 +42,7 @@ This is my personal website portfolio showcasing my work as a web developer. It 
 
 - Description of project and its features
 - Technologies used
-- Screenshots or demo video
+- Screenshots or demo video -->
 - 
 ## Contact Me
 
