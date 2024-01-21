@@ -39,7 +39,7 @@ async function submitForm() {
         var email = document.getElementById('email').value;
 
         if (!email.toString().includes("@")) return;
-        const response = await fetch('https://api.firmus.hr/waitlist', {
+        const response = await fetch('', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
