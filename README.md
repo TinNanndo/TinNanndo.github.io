@@ -22,12 +22,12 @@ This is my personal website portfolio showcasing my work as a web developer. It 
 ### Home page of portfolio
 [Click me!!!](https://tinnanndo.github.io/)
 
-### Project 1: [Lucky cat](https://tinnanndo.github.io/html/prva_stranica/index.html)
+### Project 1: [Lucky cat](https://tinnanndo.github.io/docs/prva_stranica/index.html)
 
 - Final project for my high school of web design 
 - HTML, jQuery, CSS
 
-### Project 2: [Firmus](https://tinnanndo.github.io/html/druga_stranica/index.html)
+### Project 2: [Firmus](https://tinnanndo.github.io/docs/druga_stranica/index.html)
 
 - Project for Firmus app for students about job searching
 - HTML, CSS, JavaScript
