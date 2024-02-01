@@ -16,18 +16,29 @@ h3{
 }
 
 .navbar a {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
     cursor: pointer;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
     transition: all 0.2s ease;
     padding: 0.3rem 1rem;
     border-bottom: 3px solid transparent;
 }
 
 .navbar a:hover {
-    filter: brightness(110%);
-    transform: translateY(0.25rem);
+    -webkit-filter: brightness(110%);
+            filter: brightness(110%);
+    -webkit-transform: translateY(0.25rem);
+       -moz-transform: translateY(0.25rem);
+         -o-transform: translateY(0.25rem);
+            transform: translateY(0.25rem);
     border-bottom: 3px solid #1479ec;
-    box-shadow: 0 25px 40px -10px rgba(20, 121, 236, 0.34);
+    -webkit-box-shadow: 0 25px 40px -10px rgba(20, 121, 236, 0.34);
+       -moz-box-shadow: 0 25px 40px -10px rgba(20, 121, 236, 0.34);
+            box-shadow: 0 25px 40px -10px rgba(20, 121, 236, 0.34);
 }
 
 .object-cover {
@@ -42,12 +53,100 @@ h3{
     right: 0;
     bottom: 0;
     left: 0;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(35%, rgba(255,255,255,0)), to(rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 35%, rgba(255,255,255,1) 100%);
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 35%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,0) 35%, rgba(255,255,255,1) 100%);
     background: linear-gradient(to bottom, rgba(255,255,255,0) 35%, rgba(255,255,255,1) 100%);
 }
 
 .grid-my{
+    display:-ms-grid;
     display:grid;
-    align-content: center;
+    -webkit-align-content: center;
+            align-content: center;
+}
+
+#submitButton{
+  background-color: #1479EC;
+  color: #F4F6F9;
+  -webkit-border-radius: 0.375rem;
+     -moz-border-radius: 0.375rem;
+          border-radius: 0.375rem;
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+#submitButton::before{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid transparent;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transform: translateX(100%);
+     -moz-transform: translateX(100%);
+       -o-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+#submitButton::after{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transform: translateX(-100%);
+     -moz-transform: translateX(-100%);
+       -o-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+#submitButton:hover{
+  color: #1479EC;
+  background-color: transparent;
+  -webkit-transition: .3s background-color linear, .3s color linear;
+  -o-transition: .3s background-color linear, .3s color linear;
+  -moz-transition: .3s background-color linear, .3s color linear;
+  transition: .3s background-color linear, .3s color linear;
+}
+
+#submitButton:hover::before{
+  border-color: #1479EC;
+  height: 100%;
+  -webkit-transform: translateX(0);
+     -moz-transform: translateX(0);
+       -o-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: .3s transform linear, .3s height linear .3s;
+  -o-transition: .3s transform linear, .3s height linear .3s;
+  -moz-transition: .3s transform linear, .3s height linear .3s;
+  transition: .3s transform linear, .3s height linear .3s;
+}
+
+#submitButton:hover::after{
+  border-color: #1479EC;
+  height: 100%;
+  -webkit-transform: translateX(0);
+     -moz-transform: translateX(0);
+       -o-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: .3s transform linear, .3s height linear .5s;
+  -o-transition: .3s transform linear, .3s height linear .5s;
+  -moz-transition: .3s transform linear, .3s height linear .5s;
+  transition: .3s transform linear, .3s height linear .5s;
 }
 
 .tocka li::after{
@@ -64,13 +163,27 @@ h3{
 footer .ikone a {
   font-size: 1.1rem;
   color: #fff;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-box;
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+          justify-content: center;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
 }
 
 footer .ikone a:hover,
@@ -82,6 +195,9 @@ footer .ikone a:active  {
 
 footer .ikone a i,
 footer a {
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
@@ -98,10 +214,21 @@ footer a:active{
   }
 
   .swiper-slide {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 18px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+            justify-content: center;
+    -webkit-border-radius: 18px;
+       -moz-border-radius: 18px;
+            border-radius: 18px;
     font-size: 22px;
     font-weight: bold;
     color: #fff;
@@ -111,14 +238,27 @@ footer a:active{
 
   @media (max-width: 640px) {
     .tocka {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+           -moz-box-pack: center;
+                justify-content: center;
+        -webkit-flex-wrap: wrap;
+                flex-wrap: wrap;
       }
     
       .tocka li {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+           -moz-box-align: center;
+                align-items: center;
       }
     
       .tocka li::after {
