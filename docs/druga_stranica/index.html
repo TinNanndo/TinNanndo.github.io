@@ -4,7 +4,6 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/main.css"/>
@@ -21,28 +20,28 @@
 <script src="js/index.js"></script>
 
 <!-- NAV -->
-<header class="h-screen relative">
+<header class="relative">
 <div class="absolute inset-x-0 top-0 z-50">
   <nav class="flex items-center p-6 lg:px-8 justify-center" aria-label="Global">
-    <div class="flex justify-between w-full lg:w-auto">
+    <div class="flex justify-center w-full lg:w-auto">
       <a href="#" class="-m-1.5 p-1.5">
         <img class="h-8 w-auto" src="assets/favicon.svg" alt="">
       </a>
-      <div class="flex lg:hidden">
+      <!-- <div class="flex lg:hidden">
         <button id="menuButtonOpen" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
           <span class="sr-only">Open main menu</span>
           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
         </button>
-      </div>  
+      </div>   -->
     </div>
-    <div class="navbar hidden lg:flex lg:gap-x-12 justify-center mx-auto">
+    <!-- <div class="navbar hidden lg:flex lg:gap-x-12 justify-center mx-auto">
       <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Product</a>
       <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Features</a>
       <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
       <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Company</a> 
-    </div>
+    </div> -->
   </nav>
     <div id="menu" class="lg:hidden hidden" role="dialog" aria-modal="true">
       <div class="fixed inset-0 z-50"></div>
@@ -51,18 +50,18 @@
           <a href="#" class="-m-1.5 p-1.5">
             <img class="h-8 w-auto" src="assets/favicon.svg" alt="">
           </a>
-          <button id="menuButtonClose" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+          <!-- <button id="menuButtonClose" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
             <span class="sr-only">Close menu</span>
             <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
-          </button>
+          </button> -->
         </div>
         <div class="mt-6 flow-root">
           <div class="-my-6 divide-y divide-gray-500/10">
             <div class="space-y-2 py-6">
               <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Product</a>
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
+              <a href="#" classs="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
               <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
               <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
             </div>
@@ -73,39 +72,45 @@
   </div>
 
 <!-- HEADER -->
-<div class="bg-fixed relative overflow-hidden shadow-inner">
-    <div class="pt-10 pb-14 sm:pt-16 lg:overflow-hidden lg:pb-20 mt-4 sm:mt-0">
-        <div class="mx-auto max-w-5xl lg:px-8">
-            <div class="lg:grid lg:grid-cols-2 lg:gap-8">
-                <div class="mx-auto max-w-md px-4 xl:max-h-70p text-center sm:max-w-2xl sm:px-6 align-middle lg:flex lg:items-center lg:px-0 lg:text-left">
-                    <div class="lg:py-24">
-                        <h1 class="mt-4 text-4xl font-bold tracking-tight text-black sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
-                            <span class="block text-primary font-black">FIRMUS JOBS: </span><span class="block text-black font-normal">Budućnost poslova</span>
-                        </h1>
-                        <p class="mt-3 text-base text-gray-400 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">Firmus: Vaša
-                            inovativna platforma za povezivanje studenata i poslodavaca. Prijavom na listu čekanja,
-                            dobit ćete pristup aplikaciji na dva mjeseca.</p>
-                    </div>
-                </div>
-
-                <div class="mt-12 lg:block flex justify-center">
-                    <div class="object-cover">
-                        <img class="items-center xl:max-h-70p" src="assets/iphone.png" alt=""/>
-                    </div>
-                </div>
+<div class="bg-fixed relative overflow-hidden">
+  <div class="pt-10 pb-14 sm:pt-16 lg:overflow-hidden lg:pb-20 mt-4 sm:mt-0">
+    <div class="mx-auto max-w-2xl lg:max-w-4xl xl:max-w-7xl lg:px-8 bg-white p-6 rounded-lg h-custom overflow-hidden shadow-lg">
+      <div class="lg:grid lg:grid-cols-2 lg:gap-8">
+        <div class="mx-auto max-w-md px-4 xl:max-h-70p text-center sm:max-w-2xl sm:px-6 align-middle lg:flex lg:items-center lg:px-0 lg:text-left">
+          <div class="lg:py-24 px-12">
+            <div class="mt-4 text-4xl font-bold tracking-tight text-black sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
+              <h1 class="block text-primary font-black">FIRMUS JOBS: </h1>
+              <h2 class="block text-black font-normal">Budućnost poslova</h2>
             </div>
+            <p class="mt-3 text-base text-gray-400 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">Firmus: Vaša
+              inovativna platforma za povezivanje studenata i poslodavaca. Prijavom na listu čekanja,
+              dobit ćete pristup aplikaciji na dva mjeseca.</p>
+          </div>
         </div>
+
+        <div class="mt-12 mx-auto lg:block flex justify-center">
+          <div class="object-cover">
+            <img class="items-center xl:max-h-70p mx-auto" src="assets/iphone.png" alt=""/>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 </header>
 <!-- SECTION 1 -->
-<section class="parallax bg-white h-auto relative">
-  <div class="relative grid min-h-screen grid-cols-1 items-center justify-center overflow-hidden p-8 sm:p-12">
-    <div class="grid lg:grid-cols-2 justify-items-stretch grid-cols-1 w-full max-w-screen-lg rounded-md sm:border-2 border-gray-100 bg-white sm:p-14">
-      <div class="col-start-1 grid-my grid-cols-1 items-center lg:p-0 mr-12">
-        <h3 class="mt-2 max-w-2xl text-center text-2xl font-bold leading-tight sm:text-3xl md:text-3xl md:leading-tight">Prijavi se na listu čekanja</h3>
+
+<section class="h-auto relative">
+  <div class="relative grid grid-cols-1 items-center justify-center overflow-hidden sm:p-8 sm:p-12">
+    <div class="grid xl:grid-cols-2 gap-12 justify-items-stretch grid-cols-1 w-full max-w-screen-lg sm:p-14">
+
+      <!-- TEXT -->
+
+      <div class="col-start-1 col-span-1 lg:col-span-2 grid-my grid-cols-1 bg-white items-center lg:p-0 sm:px-28 lg:py-0 py-6 rounded-lg shadow-lg">
+      <div class="">
+        <h3 class="mt-2 max-w-2xl text-center text-2xl font-bold leading-tight sm:text-4xl md:text-3xl md:leading-tight text-primary">Prijavi se na listu čekanja</h3>
     
-        <p class="sm:w-96 mt-4 text-gray-500 text-base sm:text-lg md:text-lg">
+        <p class="sm:w-96 mt-4 text-gray-500 text-base sm:text-lg p-8 sm:p-0">
           🚀 Postanite pioniri na "Firmus" platformi! 🌐 Prijavom na listu čekanja, osiguravate si:<br><br>
           
           ✨ 2 mjeseca BESPLATNOG pristupa aplikaciji!<br>
@@ -114,7 +119,7 @@
           💼 Posebne PONUDE!<br><br>
           
           🔥 Gradite svoju karijeru s "Firmus" - prijavite se danas! 💪🌟 #FirmusLaunch #BudiPrvi<br><br></p>
-        <form id="myForm" class="mx-auto mt-2 flex w-full max-w-md sm:flex-row sm:justify-between">
+        <form id="myForm" class="mx-auto mt-2 flex w-full max-w-lg sm:flex-row sm:justify-between">
           <div class="flex items-center flex-col sm:flex-row w-full">
             <div class="relative">
               <label for="email" class="sr-only">Email</label>
@@ -122,11 +127,12 @@
                 type="email" 
                 name="email" 
                 id="email" 
-                class="w-full rounded-md border-gray-200 py-2 px-5 pe-10 shadow-sm sm:text-sm" 
+                class="w-full rounded-md border-gray-200 py-3 px-6 pe-10 shadow-sm text-base" 
                 placeholder="Unesite email adresu" 
+                autocomplete="email"
               />
-              <span class="pointer-events-none absolute inset-y-0 end-0 flex w-10 justify-center items-center text-gray-500">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4">
+              <span class="pointer-events-none absolute inset-y-0 end-0 flex w-6 justify-center items-center text-gray-500">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
                   <path
                     fill-rule="evenodd"
                     d="M5.404 14.596A6.5 6.5 0 1116.5 10a1.25 1.25 0 01-2.5 0 4 4 0 10-.571 2.06A2.75 2.75 0 0018 10a8 8 0 10-2.343 5.657.75.75 0 00-1.06-1.06 6.5 6.5 0 01-9.193 0zM10 7.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5z"
@@ -138,14 +144,18 @@
             <div class="ml-5 sm:q-auto">
               <button 
                 type="submit"
-                onclick=""
-                class="rounded-md bg-primary px-5 py-2 font-bold text-white mt-3 sm:mt-0">Prijavi se</button>
+                onclick="submitForm()"
+                class="rounded-md bg-primary px-6 py-3 font-bold text-white text-base mt-3 sm:mt-0">Prijavi se</button>
             </div>
           </div>
         </form>
       </div>
+    </div>
 
-      <div class="col-start-2 swiper mySwiper mt-12 lg:mt-0">
+      <!-- SLIDER -->
+
+      <div class="col-start-3 mt-12 lg:mt-0 bg-white p-6 rounded-lg shadow-lg">
+        <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img class="bg-contain" src="assets/slider/slika1.png" alt="slika 1"></div>
           <div class="swiper-slide"><img class="bg-contain" src="assets/slider/slika2.png" alt="slika 2"></div>
@@ -153,6 +163,7 @@
           <div class="swiper-slide"><img class="bg-contain" src="assets/slider/slika4.png" alt="slika 4"></div>
           <div class="swiper-slide"><img class="bg-cover" src="assets/slider/slika5.png" alt="slika 5"></div>
           <div class="swiper-slide"><img class="bg-cover" src="assets/slider/slika6.png" alt="slika 6"></div>
+        </div>
         </div>
       </div>
     </div>
@@ -179,16 +190,16 @@
         </a>
       </div>
 
-        <div class="mt-10 flex justify-center items-center space-x-6">
+        <!-- <div class="mt-10 flex justify-center items-center space-x-6">
           <ul class="flex tocka">
             <li><a href="#" class="text-gray-800">Product</a></li>
             <li><a href="#" class="text-gray-800">Features</a></li>
             <li><a href="#" class="text-gray-800">Marketplace</a></li>
             <li><a href="#" class="text-gray-800">Company</a></li>
           </ul>
-        </div>
+        </div> -->
 
-        <div class="mt-3 flex justify-center space-x-6">
+        <div class="mt-6 flex justify-center space-x-6">
             <a href="#" class="text-base text-gray-500 hover:text-gray-900">
                 © 2024 Firmus
             </a>  

@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+h1,
+h2,
+h3{
+    font-family: 'Oswald', sans-serif;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+ 
 .bg-secondary {
     --tw-bg-opacity: 1;
     background-color: rgb(0 122 255 / var(--tw-bg-opacity));
@@ -119,21 +131,15 @@ footer a:active{
       .tocka li:last-child::after {
         content: '';
       }
+
+      .swiper {
+        width: 200px;
+        height: auto;
+      }
   }
 
   @media (min-width: 640px) {
     .swiper {
-        margin-left: 5rem;
-    }
-
-    .parallax {
-      background-image: url("../assets/bg.jpg");
-      
-      min-height: 100vh;
-    
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: auto;
+        margin-left: 0 auto;
     }
   }

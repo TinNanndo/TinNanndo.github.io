@@ -1,22 +1,27 @@
 // Navbar i swiper
 
 document.addEventListener('DOMContentLoaded', () => {
-    const menuButtonClose = document.getElementById('menuButtonClose');
-    const menuButtonOpen = document.getElementById('menuButtonOpen');
-    const menu = document.getElementById('menu');
 
-    if (!menuButtonClose || !menuButtonOpen || !menu) {
-        console.error('Required elements not found');
-        return;
-    }
+    //menu
 
-    menuButtonClose.addEventListener('click', () => {
-        menu.classList.add('hidden');
-    });
+    // const menuButtonClose = document.getElementById('menuButtonClose');
+    // const menuButtonOpen = document.getElementById('menuButtonOpen');
+    // const menu = document.getElementById('menu');
 
-    menuButtonOpen.addEventListener('click', () => {
-        menu.classList.remove('hidden');
-    });
+    // if (!menuButtonClose || !menuButtonOpen || !menu) {
+    //     console.error('Required elements not found');
+    //     return;
+    // }
+
+    // menuButtonClose.addEventListener('click', () => {
+    //     menu.classList.add('hidden');
+    // });
+
+    // menuButtonOpen.addEventListener('click', () => {
+    //     menu.classList.remove('hidden');
+    // });
+
+    // swiper
 
     var swiper = new Swiper(".mySwiper", {
         effect: "cards",
@@ -39,7 +44,7 @@ async function submitForm() {
         var email = document.getElementById('email').value;
 
         if (!email.toString().includes("@")) return;
-        const response = await fetch('', {
+        const response = await fetch('https://api.firmus.hr/waitlist', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
