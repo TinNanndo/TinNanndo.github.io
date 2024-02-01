@@ -177,22 +177,14 @@ body.open .navbar-overlay{
     margin: 20px;
 }
 
-.druga{
-    background-color: #e24040;
-    color: #f0f0f0;
-    border-radius: 10px;
-    padding: 10px;
-    height: 50%;
-    flex-basis: 50%;
-    margin: 20px;
-}
-
 /* PORTFOLIO */
 
 #portfolio{
     height: 100%;
     height: 100vh;
 }
+
+/* LUCKY CAT */
 
 .lucky-cat{
     display: flex;
@@ -215,6 +207,34 @@ body.open .navbar-overlay{
 }
 
 .lucky-button a:hover{
+    background-color: rgb(254, 181, 79);
+    transition: 0.3s;
+}
+
+/* FIRMUS */
+
+.firmus{
+    margin-top: 2rem;
+    display: flex;
+}
+
+.firmus-naslov{
+    flex-basis: 50%;
+}
+
+.firmus-text{
+    flex-basis: 50%;
+}
+
+.firmus-button a{
+    border-radius: 10px;
+    color: #f0f0f0;
+    text-decoration: none;
+    background-color: rgb(94, 94, 181);
+    padding: 10px;
+}
+
+.firmus-button a:hover{
     background-color: rgb(254, 181, 79);
     transition: 0.3s;
 }
