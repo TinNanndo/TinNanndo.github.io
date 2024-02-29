@@ -796,7 +796,7 @@ video {
 }
 
 .h-custom {
-  height: 40rem;
+  height: 50rem;
 }
 
 .h-auto {
@@ -1198,6 +1198,10 @@ video {
   padding-bottom: 3.5rem;
 }
 
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
 .pe-10 {
   padding-inline-end: 2.5rem;
 }
@@ -1463,7 +1467,27 @@ video {
   outline-color: #6366f1;
 }
 
+.swiper {
+  width: 200px;
+  height: auto;
+}
+
+@media (min-width: 375px) {
+  .ss\:h-custom {
+    height: 48rem;
+  }
+
+  .ss\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+} 
+
 @media (min-width: 640px) {
+  .swiper {
+    margin-left: 0 auto;
+  } 
+
   .sm\:bg-white {
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1631,6 +1655,22 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .md\:grid-start-1 {
+    grid-column-start: 1;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1640,6 +1680,10 @@ video {
     line-height: 1.25;
   }
 
+  .md\:mt-0 {
+    margin-top: 0rem;
+  }
+
   .md\:mt-4 {
     margin-top: 1rem;
   }
@@ -1647,14 +1691,28 @@ video {
   .md\:mt-12 {
     margin-top: 3rem;
   }
+
+  .md\:mt-32 {
+    margin-top: 8rem;
+  }
   
   .md\:flex-row {
     flex-direction: row;
   }
 
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .md\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+  
+  .md\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .md\:px-28 {
@@ -1666,9 +1724,26 @@ video {
     padding-left: 8rem;
     padding-right: 8rem;
   }
+
+  .md\:swiper {
+    width: 248px;
+    height: auto;
+  }
+
+  .md\:text-custom {
+    font-size: 3.55rem;
+  }
 }
 
 @media (min-width: 1024px) {
+  .lg\:h-custom {
+    height: 35rem;
+  }
+
+  .lg\:justify-start {
+    justify-content: flex-start;
+  }
+
   .lg\:mt-6 {
     margin-top: 1.5rem;
   }
@@ -1748,6 +1823,11 @@ video {
     padding-right: 2rem;
   }
 
+  .lg\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
   .lg\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
@@ -1787,9 +1867,21 @@ video {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
+
+  .lg\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
 }
 
 @media (min-width: 1280px) {
+  .xl\:h-custom {
+    height: 40rem;
+  }
+
+  .xl\:mt-12 {
+    margin-top: 3rem;
+  }
+
   .xl\:max-h-70p {
     max-height: 70%;
   }
@@ -1822,5 +1914,20 @@ video {
 
   .xl\:mt-0 {
     margin-top: 0px;
+  }
+
+  .xl\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .xl\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .xl\:swiper {
+    width: 300px;
+    height: auto;
   }
 }
