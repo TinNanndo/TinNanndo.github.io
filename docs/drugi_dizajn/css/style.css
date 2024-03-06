@@ -1565,6 +1565,10 @@ video {
     gap: 0px;
   }
 
+  .sm\:gap-16 {
+    gap: 4rem;
+  }
+
   .sm\:rounded-l-md {
     border-top-left-radius: 0.375rem;
     border-bottom-left-radius: 0.375rem;
