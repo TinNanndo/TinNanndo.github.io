@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -24,16 +25,26 @@ const Header = () => {
     };
   }, [menuOpen]);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {window.removeEventListener('resize', handleResize)};
+  })
+
   const menuVariants = {
     hidden: { opacity: 0, x: '-100%' },
     visible: { opacity: 1, x: 0 },
+    exit: { opacity: 0, y: '-100%' }
   };
 
   return (
     <>
       <nav className="bg-customOrange border-b-8 border-customYellow rounded-t-md flex flex-col md:flex-row items-center justify-between md:justify-start">
         <div className="flex items-center justify-between w-full md:w-auto">
-          <div className="text-4xl p-4 text-customWhite md:hover:bg-customYellow rounded-tl-md">
+          <div className="text-4xl p-4 text-customWhite md:hover:bg-customYellow rounded-tl-md cursor-pointer">
             <FontAwesomeIcon icon={faHouse} />
           </div>
           <div className="md:hidden text-4xl p-4 text-customWhite z-50" onClick={toggleMenu}>
@@ -41,14 +52,17 @@ const Header = () => {
           </div>
         </div>
 
+        <AnimatePresence>
+        {menuOpen && (
         <motion.div
           className={`flex-col md:flex-row md:flex items-center w-full md:w-auto ${
             menuOpen ? 'flex' : 'hidden'
           } md:flex md:static md:h-auto absolute top-0 left-0 h-full bg-customOrange z-40 transition-transform transform`}
           initial="hidden"
           animate={menuOpen ? 'visible' : 'hidden'}
-          variants={menuVariants}
-          transition={{ duration: 0.5 }}
+          exit = "exit"
+          variants={ isMobile ? menuVariants : {} }
+          transition={{ duration: 0.3 }}
         >
           <div className='relative top-32 right-16 md:static md:top-0 md:right-0 flex flex-col md:flex-row'>
             <div className="w-full md:w-auto">
@@ -82,6 +96,8 @@ const Header = () => {
             </div>
           </div>
         </motion.div>
+        )}
+        </AnimatePresence>
       </nav>
 
       <header className="p-4 h-screen flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-80">
